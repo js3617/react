@@ -1,18 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
 
-let post = '부산 우동 맛집'; //서버에서 가져온 데이터라고 생각하자
+let post = '부산 우동 맛집';
+let [글제목,b] = useState(['남자코트 추천','파이썬 독학','부산 우동 맛집']);
 
 
   return (
     <div className="App">
       <div className="black-nav">
-        <p>클래스 명은 무조건 ClassName로 선언해야한다</p>
-        <h3 style={{color : 'red'}}>스타일선언도 무조건 이름:값 을 사용하여 작성한다</h3>
+        <h4>ReactBlog</h4>
       </div>
-      <h3>{ post } 변수명을 사용하고싶을때는 "중괄호 변수명 중괄호"방식으로 사용해야한다</h3>
+      <div className="list">
+        <h3>{ 글제목[0] }</h3>
+        <p>2월 17일 발행</p>
+      </div>
+      <div className="list">
+        <h3>{ 글제목[1] }</h3>
+        <p>2월 17일 발행</p>
+      </div>
+      <div className="list">
+        <h3>{ 글제목[2] }</h3>
+        <p>2월 17일 발행</p>
+      </div>
     </div>
   );
 }
