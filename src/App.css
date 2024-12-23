@@ -59,3 +59,9 @@ div{
   background: #eee;
   text-align: left;
 }
+
+@import url("//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css");
+
+* {
+  font-family: 'KoPub Dotum', sans-serif;
+}
